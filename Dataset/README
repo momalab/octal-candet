@@ -1,0 +1,24 @@
+This directory contains the iDASH2020 Track 1 challenge data.
+
+We provide mutation and copy number data for 11 sites (tumor's locations). This is described in the file named "challenge_sample_sites.txt", where the location of each patient's tumor is specified. The challenge is building classifiers for predicting the tumor's site, given the mutations and copy number data.
+
+For each tissue, we provide 3 files. For example, colon tissue contains the following files:
+
+1. Challenge/Colon_challenge_variants.txt: The somatic mutations of all the samples for colon tissue. The file is a tab-delimited file with 8 columns and each row is a mutation. 
+
+First line is : TCGA-3L-AA1B-01 ABCA6   17      67092867        Missense_Mutation       SNP     tolerated(1)    MODERATE
+Column 1: Sample id (TCGA-3L-AA1B-01)
+Column 2: Gene name (ABCA6)
+Columns 3,4: Chromosome, location (17, 67092867)
+Column 5: Mutation type (Missense_Mutation)
+Column 6: Is the mutation a SNP? (SNP)
+Column 7,8: Mutation's effect as predicted by two different methods. (tolerated(1),MODERATE)
+
+The participants can mix and match these columns for each tumor type to build the classifiers for each tumor type.
+
+2. Challenge/Colon_challenge_CNs.txt: This is the copy number data for each tumor type. Each row is a gene (matching to the variants file) and columns are the sample id's that ar ematching to the variant file. Each entry in this "matrix" represent the copy number state of the gene on the corresponding sample. There are 5 different levels for copy numbers where -2 and -1 represent a deletion, 1 and 2 represent an amplification of the corresponding gene in the corresponding sample.
+
+3. Challenge/Colon_challenge_samples.list: The sample id's for the colon tissue.
+
+The participants are asked to develop the classifiers that will use any combination of the mutations and copy number data to predict the location of tumors. Evaluations will be performed using variant and copy number data in files that are formatted the same manner as described above with the same genes.
+
