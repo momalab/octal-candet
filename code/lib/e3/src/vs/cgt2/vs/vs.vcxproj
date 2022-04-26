@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\cpp_cgt\keys\ekx_circ_bdd.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\ekx_circ_pil.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\ekx_circ_plain.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\ekx_circ_tfhe.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\ekx_native.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\ekx_pil.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\privkeys.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\sk_abstract.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\sk_circ.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\sk_circ_bdd.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\sk_circ_pil.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\sk_circ_plain.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\sk_circ_tfhe.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\sk_native.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\keys\sk_pil.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\main\cfgnames.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\main\cfgparser.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\main\cgt.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\main\cloparser.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\main\sectype.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\main\sec_bridge.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\main\sec_circuit.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\main\sec_native.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\main\sec_partial.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\util\euler.h" />
+    <ClInclude Include="..\..\..\cpp_cgt\util\os_filesys.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\bbs.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\bdda.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\crcl.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\crutil.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\eval.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\gram.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\main.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\olc.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\olrnd.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\prep.h" />
+    <ClInclude Include="..\..\..\cpp_crcl\cr\vars.h" />
+    <ClInclude Include="..\..\..\cpp_share\keys\ek_abstract.h" />
+    <ClInclude Include="..\..\..\cpp_share\keys\ek_circ.h" />
+    <ClInclude Include="..\..\..\cpp_share\keys\ek_circ_bdd.h" />
+    <ClInclude Include="..\..\..\cpp_share\keys\ek_circ_pil.h" />
+    <ClInclude Include="..\..\..\cpp_share\keys\ek_circ_plain.h" />
+    <ClInclude Include="..\..\..\cpp_share\keys\ek_circ_tfhe.h" />
+    <ClInclude Include="..\..\..\cpp_share\keys\ek_native.h" />
+    <ClInclude Include="..\..\..\cpp_share\keys\ek_pil.h" />
+    <ClInclude Include="..\..\..\cpp_share\keys\evalkeys.h" />
+    <ClInclude Include="..\..\..\cpp_share\util\def_fhew0.h" />
+    <ClInclude Include="..\..\..\cpp_share\util\def_heli0.h" />
+    <ClInclude Include="..\..\..\cpp_share\util\def_mpir.h" />
+    <ClInclude Include="..\..\..\cpp_share\util\def_mpir0.h" />
+    <ClInclude Include="..\..\..\cpp_share\util\def_pil.h" />
+    <ClInclude Include="..\..\..\cpp_share\util\def_tfhe.h" />
+    <ClInclude Include="..\..\..\cpp_share\util\def_tfhe0.h" />
+    <ClInclude Include="..\..\..\cpp_share\util\e3util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_circ_bdd.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_circ_fhew0.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_circ_heli0.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_circ_pil.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_circ_plain.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_circ_tfhe0.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_native.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_pail.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_pil.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_seal0.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\ekx_seal_ckks0.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_abstract.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_circ.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_circ_bdd.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_circ_fhew0.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_circ_heli0.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_circ_pil.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_circ_plain.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_circ_tfhe0.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_native.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_pail.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_pil.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_seal0.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\keys\sk_seal_ckks0.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\main\cfgparser.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\main\cgt.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\main\cloparser.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\main\platname.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\main\sectype.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\main\sec_bridge.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\main\sec_circuit.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\main\sec_native.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\main\sec_partial.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\util\cgtutil.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\util\euler.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\util\os_filesys.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\util\timer.cpp" />
+    <ClCompile Include="..\..\..\cpp_cgt\util\win\os_file2.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\cr\bbs.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\cr\bdda.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\cr\crcl.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\cr\crutil.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\cr\gram.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\cr\olc.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\cr\olrnd.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\cr\prep.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\cr\simp.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\cr\vars.cpp" />
+    <ClCompile Include="..\..\..\cpp_crcl\d0\cuddObj.cc" />
+    <ClCompile Include="..\..\..\cpp_share\keys\anykey.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_abstract.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_circ.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_circ_bdd.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_circ_fhew0.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_circ_heli0.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_circ_pil.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_circ_plain.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_circ_tfhe0.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_native.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_pail.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_pil.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_seal0.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\keys\ek_seal_ckks0.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\util\def_fhew0.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\util\def_heli0.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\util\def_mpir0.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\util\def_pil.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\util\def_seal0.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\util\def_tfhe0.cpp" />
+    <ClCompile Include="..\..\..\cpp_share\util\e3util.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A9EB6AAF-CB30-4026-B9A9-7DFBF167C496}</ProjectGuid>
+    <RootNamespace>vs</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>../../../cpp_cgt/main;../../../cpp_crcl/d0;../../../cpp_crcl/cr;../../../cpp_cgt/util;../../../cpp_cgt/keys;../../../cpp_share/keys;../../../cpp_share/util;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>../../../u/;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\user\oleg\git\e3work\src\cpp_share\keys;C:\user\oleg\git\e3work\src\cpp_share\util;C:\user\oleg\git\e3work\src\cpp_cgt\main;C:\user\oleg\git\e3work\src\cpp_cgt\keys;C:\user\oleg\git\e3work\src\cpp_cgt\util;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../../cpp_crcl/cr</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;PLAT=win;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../cudd/c30</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>../../../cudd/vs/Release/vs.lib;;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

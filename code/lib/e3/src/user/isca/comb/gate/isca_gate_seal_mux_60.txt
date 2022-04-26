@@ -1,0 +1,13 @@
+
+SEAL
+NOT... 0
+AND... 0
+OR.... 0
+XOR... 0
+NAND.. 0
+NOR... 0
+XNOR.. 0
+MUX... 479044
+
+SEAL...working dir: /workspace/e3work/src
+cgt error (std): poly must decode to positive value

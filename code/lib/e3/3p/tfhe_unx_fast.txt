@@ -1,0 +1,14 @@
+1. have tfhe checkout
+2. file src/CmakeLitst.txt
+remove all " -Werror" (mind space)
+make build; goto build
+and
+3. cmake ../src -DENABLE_SPQLIOS_FMA=on
+4. make
+5. in 3p/tfhe_unx/native and target 
+remove *.a files and copy libtfhe-spqlios-fma.so from TFHE/build/libthfe
+6. in src
+copy the same .so to src
+and in plat-unx.mak replace uncommented lines 61-62 to 63-64
+7. export LD_LIBRARY_PATH=.
+

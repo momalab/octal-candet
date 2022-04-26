@@ -1,0 +1,12 @@
+
+SEAL
+NOT... 0
+AND... 0
+OR.... 0
+XOR... 0
+NAND.. 0
+NOR... 0
+XNOR.. 0
+MUX... 475563
+
+SEAL... 0 1 NOT: 1 AND: 1 OR: 1 XOR: 1 NAND: 1 NOR: 1 XNOR: 1 MUXexception

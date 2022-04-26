@@ -1,0 +1,1 @@
+g++ -std=c++11 test.cpp -Isrc src/fhe.a -lpthread -lntl -lgmp

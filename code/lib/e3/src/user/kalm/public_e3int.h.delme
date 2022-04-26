@@ -1,0 +1,47 @@
+// dummy
+#pragma once
+
+#include <cstdlib>
+#include <string>
+
+template <int SZ>
+class SecureInt
+{
+    private:
+        int64_t x;
+
+    public:
+        SecureInt() : SecureInt(0) { }
+        SecureInt(int64_t a) { x = a; }
+        SecureInt(const SecureInt & a) { x = a.x; }
+        SecureInt(const std::string & a) { x = std::stoll( a.substr(7, a.size()-1) ); }
+
+        SecureInt & operator =(const SecureInt & a) { x=a.x; return *this; }
+        SecureInt & operator /=(uint64_t a) { x/=a; return *this; }
+        SecureInt & operator >>=(uint64_t a) { x>>=a; return *this; }
+
+        SecureInt operator +(const SecureInt & a) const { return SecureInt(x+a.x); }
+        SecureInt operator -(const SecureInt & a) const { return SecureInt(x-a.x); }
+        SecureInt operator *(const SecureInt & a) const { return SecureInt(x*a.x); }
+        SecureInt operator *(uint64_t a) const { return SecureInt(x*a); }
+        SecureInt operator /(const SecureInt & a) const { return SecureInt(x/a.x); }
+        SecureInt operator /(uint64_t a) const { return SecureInt(x/a); }
+        SecureInt operator <<(uint64_t a) const { return SecureInt(x<<a); }
+        SecureInt operator >>(uint64_t a) const { return SecureInt(x>>a); }
+
+        std::string str() const { return "Secure[" + std::to_string(x) + "]"; }
+
+        static SecureInt encrypt(int64_t a) { return SecureInt(a); }
+        friend SecureInt operator /(uint64_t a, const SecureInt & b) { return SecureInt(a/b.x); }
+        friend SecureInt abs(const SecureInt & a) { return SecureInt(std::abs(a.x)); }
+        friend std::ostream & operator <<(std::ostream & stream, const SecureInt & a)
+        {
+            stream << a.str();
+            return stream;
+        }
+};
+
+const SecureInt<8> _0_Ep(0);
+const SecureInt<8> _1_Ep(1);
+const SecureInt<8> _2_Ep (2);
+const SecureInt<8> _100_Ep (100);
