@@ -1,0 +1,5 @@
+*.const
+*.exe
+*.key
+*.log
+*.tmp
