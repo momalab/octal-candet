@@ -48,7 +48,7 @@ Files of interest:
 * weights: Weights.txt, Bias.txt in data/server/<no_of_features_used>
 
 ### Cite us:
-E. Sarkar, E. Chielle, G. Gürsoy, L. Chen, M. Gerstein and M. Maniatakos, "Scalable privacy-preserving cancer type prediction with homomorphic encryption", 2022, arXiv:2204.05496
+E. Sarkar, E. Chielle, G. Gürsoy, L. Chen, M. Gerstein and M. Maniatakos, "Scalable privacy-preserving cancer type prediction with homomorphic encryption", 2022, arXiv:2204.05496.
 ```
 @misc{sarkar2022scalable,
       title={Scalable privacy-preserving cancer type prediction with homomorphic encryption}, 
